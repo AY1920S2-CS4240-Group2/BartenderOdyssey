@@ -13,6 +13,6 @@ public class ButtonActionWrapper : MonoBehaviour
 
     public void Quit()
     {
-        Application.Quit();
+        sceneLoader.LoadScene("10");
     }
 }

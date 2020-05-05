@@ -8,6 +8,9 @@ public static class SoundEffects
     public static string BgmHappy { get{return "bensound-slowmotion";} }
     public static string BgmSad { get{return "bensound-tomorrow";} }
 
+    public static string SystemFailureClip { get{return "system-failure";} }
+    public static string ShutdownClip { get{return "";} }
+
     public static string[] TypingClips
     {
         get
@@ -45,5 +48,7 @@ public enum SoundEffectType
     Talking,
     Normal,
     Happy,
-    Sad
+    Sad,
+    SystemFailure,
+    Shutdown
 }
