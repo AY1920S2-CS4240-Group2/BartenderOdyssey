@@ -18,9 +18,11 @@ Jameson: You know... you surprise me.
 <<defeatedAction Jameson>>
 Jameson: I would never have though you would defend me. Especially after the way I treated you just now. 
 Jameson: I think I might have severely misjudged you. 
-Jameson: Seems like there some human in you.
+Jameson: Seems like there is some human in you after all.
 Jameson: You are not like the other Androids.
 <<wait 1>>
 <<HandShake Jameson>>
 Jameson: Name's Jameson. What about you, Mr. Robot Bartender?
+<<fadeOutBgm AudioManager 2>>
+<<loadScene LevelLoader 10>>
 ===
