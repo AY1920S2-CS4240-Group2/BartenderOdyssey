@@ -12,6 +12,7 @@ public class RedScreen : MonoBehaviour
     public Sprite warningSprite;
     public Text messageText;
     public GameObject buttonGroup;
+    public GameObject EndScreenColliders;
     private bool isFlashOn;
     private bool keepFlashing;
 
@@ -142,6 +143,7 @@ public class RedScreen : MonoBehaviour
 
         yield return new WaitForSeconds(delay+1);
         buttonGroup.SetActive(true);
+        EndScreenColliders.SetActive(true);
     }
 }
 
