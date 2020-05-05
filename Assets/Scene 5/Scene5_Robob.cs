@@ -82,7 +82,7 @@ namespace Yarn.Unity.BartenderOdyssey {
 
         [YarnCommand("turnAway")]
         public void turnAway() {
-            anim.SetTrigger("HeadShake");
+            anim.SetTrigger("TurnAway");
         }
 
         [YarnCommand("walkToEntrance")]
