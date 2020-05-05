@@ -7,7 +7,7 @@ tags:
 <<turnTowardsEntrance Customer1>>
 <<startled Customer1>>
 <<point BarOwner>>
-BarOwner: Hey! Stop this instance before I call the police!
+BarOwner: Hey hey hey! Stop this instance before I call the police!
 <<runToEntrance Customer1>>
 <<wait 1>>
 <<idle BarOwner>>

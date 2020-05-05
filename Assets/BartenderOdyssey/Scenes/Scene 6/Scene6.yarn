@@ -30,8 +30,10 @@ Jameson: Don't know, don't care. I just want my drink. Leave me alone.
 <<annoyedAction Jameson>>
 <<wait 2>>
 <<pointingAction Jameson>>
+<<headShakeAction Jameson>>
 Customer1: You’re really asking for a fight.
-Jameson: I just want my drink.
+Jameson: Leave me alone, all I want is my drink. 
+Customer1: You know what? You can have your drink. 
 Customer1: Drink this, old man.
 <<startWaitingForCupThrow Customer1>>
 <<punch1 Customer1>>

@@ -5,7 +5,7 @@ tags:
 <<walkToPlayer Jameson>>
 <<waitForMove Jameson>>
 <<pointingAction Jameson>>
-Jameson: Hey you! Blazing Sunset. Now.
+Jameson: Blazing Sunset. Now.
 <<waitForDrinksServed Jameson>>
 Jameson: You know, the sight of the likes of you really disgusts me...
 <<annoyedAction Jameson>>

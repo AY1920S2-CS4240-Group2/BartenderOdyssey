@@ -22,7 +22,8 @@ Jameson: Seems like there is some human in you after all.
 Jameson: You are not like the other Androids.
 <<wait 1>>
 <<HandShake Jameson>>
-Jameson: Name's Jameson. What about you, Mr. Robot Bartender?
+Jameson: Name's Jameson. 
+Jameson: What about you, Mr. Robot Bartender?
 <<fadeOutBgm AudioManager 2>>
 <<loadScene LevelLoader 10>>
 ===
