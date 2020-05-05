@@ -37,8 +37,9 @@ BarOwner: I was hoping you could prove them wrong.
 <<shakeHead BarOwner>>
 BarOwner: But look how the tables have turned. You proved me wrong instead.
 <<sigh BarOwner>>
-BarOwner: I think it's time I get a Human Bartender...
+BarOwner: Deckard, initiate shutdown sequence. Now.
 <<leave BarOwner>>
+BarOwner: I think it's time I get a Human Bartender...
 <<wait 2>>
 <<injuredWalkLeave Jameson>>
 <<wait 4>>

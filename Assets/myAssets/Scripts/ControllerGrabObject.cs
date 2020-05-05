@@ -370,12 +370,12 @@ public class ControllerGrabObject : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            print(collidingObject);
+            //print(collidingObject);
         }
 
         if (Input.GetKeyDown(KeyCode.X))
         {
-            mixerScript.toggleCover();
+            //mixerScript.toggleCover();
         }
 
         if (collidingObject)

@@ -6,14 +6,17 @@ Customer1: Hey!
 <<wait 1>>
 Customer1: One Bloody Mary.
 <<wait 1>>
+Customer1: Bloody hell, what kind of menu is this?
+Customer1: Bugger all, just give me the Blazing Sunset.
 <<doAngryGesture Customer2>>
-Customer2: And a Martini for me. Make it quick.
+Customer2: One for me too. Make it quick.
 <<waitForMixingTrigger Customer1>>
 Customer1: Hey!
 <<doPointingGesture Customer1>>
 Customer1:  I don't have all day to be waiting for you to finish. 
 <<doIdle Customer1>>
-Customer1: You better hurry and finish before my patience runs out.
+Customer1: Hurry and finish before my patience runs out.
 <<waitForDrinksServed Customer1>>
+Customer1: Took you long enough, tool.
 <<loadNextLevel Customer1>>
 ===

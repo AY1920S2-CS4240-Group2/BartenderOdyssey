@@ -33,7 +33,7 @@ public class PillDispenser : MonoBehaviour
         if (Input.GetKeyDown("z"))
         {
             //print("z detected");
-            DispensePill();
+            //DispensePill();
         }
     }
 }

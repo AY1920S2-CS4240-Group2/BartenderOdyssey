@@ -12,8 +12,8 @@ Customer1: Ouch!
 <<walkToPlayer Jameson>>
 <<rotateTowards Jameson>>
 <<wait 1>>
-Jameson: Thank you...
-Jameson: Thank you for helping me.
+Jameson: I hate to say it, but thanks.
+Jameson: Thanks for helping me.
 Jameson: You know... you surprise me. 
 <<defeatedAction Jameson>>
 Jameson: I would never have though you would defend me. Especially after the way I treated you just now. 
@@ -22,5 +22,5 @@ Jameson: Seems like there some human in you.
 Jameson: You are not like the other Androids.
 <<wait 1>>
 <<HandShake Jameson>>
-Jameson: I am Jameson. What about you? 
+Jameson: Name's Jameson. What about you, Mr. Robot Bartender?
 ===

@@ -129,10 +129,10 @@ namespace Yarn.Unity.BartenderOdyssey {
         private IEnumerator DoWaitForDrinks(System.Action onComplete)
         {
             isDrinksServed = false;
-            print(isDrinksServed);
+            //print(isDrinksServed);
             while (!isDrinksServed)
             {
-                print(isDrinksServed);
+                //print(isDrinksServed);
                 yield return null;    
             }
 

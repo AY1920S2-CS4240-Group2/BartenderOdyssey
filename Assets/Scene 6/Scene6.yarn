@@ -5,31 +5,34 @@ tags:
 <<walkToPlayer Customer1>>
 <<waitForMove_Customer1 Customer1>>
 <<rotate_Customer1 Customer1>>
-Customer1: Whiskey.
+Customer1: Just give me what you have.
 <<walkToPlayer Jameson>>
 <<waitForMove Jameson>>
 <<walkToPlayer Jameson>>
 <<waitForMove Jameson>>
 <<headShakeAction Jameson>>
-Jameson: I need another drink.
+Jameson: Drink. Now.
 <<rotateLeft>>
 <<argueAction Customer1>>
-Customer1: Hey! Can’t you see I was here first?
+Customer1: Hey! Wait your turn, can’t you see I was here first?
 <<turnAround Jameson>>
 <<rotate Jameson>>
 <<wait 1>>
 <<pointingAction Jameson>>
-Jameson: Do I look like I care?
+Jameson: Well, EXCUSE me son.
 Customer1: How dare you talk to me like that?
 <<annoyedAction Jameson>>
 <<wait 1>>
 Customer1: Don’t you know who I am?!
+Jameson: Don't know, don't care. I just want my drink. Leave me alone.
 <<dismissiveAction Jameson>>
 <<wait 1>>
 <<annoyedAction Jameson>>
 <<wait 2>>
 <<pointingAction Jameson>>
 Customer1: You’re really asking for a fight.
+Jameson: I just want my drink.
+Customer1: Drink this, old man.
 <<startWaitingForCupThrow Customer1>>
 <<punch1 Customer1>>
 <<receivePunch1 Jameson>>
