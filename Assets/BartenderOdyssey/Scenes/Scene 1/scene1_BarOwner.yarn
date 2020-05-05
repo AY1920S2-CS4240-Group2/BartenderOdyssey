@@ -12,7 +12,7 @@ BarOwner: Afterall, you've got me here. Come, let me guide you through.
 <<wait 1>>
 BarOwner: This here on the table is your trusty mixer. It may be obvious, but you use this to mix and create your drinks.
 BarOwner: This mixer will be your partner from today, so I hope you guys play well.
-BarOwner: Oh, if you ever drop him, don't worry. You guys are bonded. Pressing the Grab button will call your mixer back to you!
+BarOwner: Oh, if you ever drop him, don't worry. You guys are bonded. Pressing the Grip button will call your mixer back to you!
 <<wait 1>>
 BarOwner: To start making drinks, you gotta have your ingredients. In the old days, people used to store different liquors in bottles.
 BarOwner: Yeah, don't know how they survived either.
