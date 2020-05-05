@@ -75,6 +75,46 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    [YarnCommand("playSoundEffect")]
+    public void PlaySoundEffect(string soundEffectString)
+    {
+        if (System.Enum.TryParse(soundEffectString, out SoundEffectType set))
+        {
+            PlaySoundEffect(set);
+        }
+        else
+        {
+            Debug.LogError($"No matching sound effect for {soundEffectString}");
+        }
+    }
+
+    public void PlaySoundEffect(SoundEffectType type)
+    {
+        AudioClip clip = null;
+        switch (type)
+        {
+            case SoundEffectType.SystemFailure:
+                clip = Resources.Load<AudioClip>(SoundEffects.SystemFailureClip);
+                break;
+            case SoundEffectType.Shutdown:
+                clip = Resources.Load<AudioClip>(SoundEffects.ShutdownClip);
+                break;
+            default:
+                Debug.LogError($"Invalid sound effect {type.ToString()}");
+                return;
+
+        }
+
+        if (clip != null)
+        {
+            audioSource.Stop();
+            audioSource.clip = clip;
+            audioSource.loop = true;
+            audioSource.volume = 0.1f;
+            audioSource.Play();
+        }
+    }
+
     public void SpeakWordsOnLoop(List<AudioClip> clips)
     {
         StartCoroutine(DoSpeakWordsOnLoop(clips));
@@ -101,7 +141,16 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    [YarnCommand("fadeOutBgm")]
+    [YarnCommand("fadeOutSoundEffect")]
+    public void FadeOutSoundEffect(string fadeTimeString)
+    {
+        if (float.TryParse(fadeTimeString, out float fade))
+            AudioFadeOut(audioSource, fade);
+            // StartCoroutine(DoAudioFadeOutYarn(audioSource, fade, onComplete));
+        else
+            Debug.LogError($"Invalid fade time {fadeTimeString[1]}");
+    }
+
     public void FadeOutBgm(string[] parameters, System.Action onComplete)
     {
         if (float.TryParse(parameters[1], out float fade))
